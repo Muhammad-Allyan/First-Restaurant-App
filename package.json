@@ -1,0 +1,33 @@
+{
+  "name": "my-restaurant-app",
+  "version": "1.0.0",
+  "description": "This is my first restaurant app.",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammad-Allyan/First-Restaurant-App.git"
+  },
+  "keywords": [
+    "RESTAURANT",
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "REACT"
+  ],
+  "author": "Muhammad Allyan Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammad-Allyan/First-Restaurant-App/issues"
+  },
+  "homepage": "https://github.com/Muhammad-Allyan/First-Restaurant-App",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

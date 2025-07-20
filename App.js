@@ -111,11 +111,11 @@ const RestroCardComponent = (props) => {
     <div className="restro-card">
       <img
         className="restro-img"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/24/cf06adc4-a816-4170-b023-83a41f36db89_1013620.jpg"
+        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId }
       />
       <h3>{resData.info.name}</h3>
       <h4>{resData.info.avgRating} stars</h4>
-      <h4>{resData.info.cuisines.join(" ,")}</h4>
+      <h4>{resData.info.cuisines.join(", ")}</h4>
       <h4>{resData.info.costForTwo}</h4>
       <h4>
         {resData.info.slaString} {resData.info.locality}

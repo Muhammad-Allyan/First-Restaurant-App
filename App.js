@@ -814,17 +814,17 @@ const BodyComponent = () => {
       <div className="search-bar">Search</div>
       <HeadingRestoMain />
       <div className="restro-container">
-        {/* {resList.map((restaurant) => (
-          <RestroCardComponent resData={restaurant} />
-        ))} */}
-        <RestroCardComponent resData={resList[0]} />
+        {resList.map((restaurant) => (
+          <RestroCardComponent key={restaurant.info.id} resData={restaurant} />
+        ))}
+        {/* <RestroCardComponent resData={resList[0]} />
         <RestroCardComponent resData={resList[1]} />
         <RestroCardComponent resData={resList[2]} />
         <RestroCardComponent resData={resList[3]} />
         <RestroCardComponent resData={resList[4]} />
         <RestroCardComponent resData={resList[5]} />
         <RestroCardComponent resData={resList[6]} />
-        <RestroCardComponent resData={resList[7]} />
+        <RestroCardComponent resData={resList[7]} /> */}
       </div>
     </div>
   );

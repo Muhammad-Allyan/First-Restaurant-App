@@ -39,14 +39,21 @@
   margin: 30px;
 }
 /* Search Bar Ends*/
-/*Restaurant Card*/
+
+/*Resto Main Heading Component Starts*/
+.main-resto-heading{
+  margin: 0px 0px 0px 70px ;
+}
+/*Resto Main Heading Component Starts*/
+/*Restaurant Card Starts*/
 .restro-card {
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
-  width: 350px;
+  width: 300px;
   height: 450px;
   margin: 30px;
   border-radius: 7px;
+  overflow: hidden;
 }
 .restro-card:hover {
   background-color: #f0f0f0;
@@ -55,8 +62,8 @@
 }
 
 .restro-img {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 230px;
   box-sizing: border-box;
   border-radius: 7px 7px 0px 0px;
 }
@@ -70,7 +77,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  overflow: hidden;
+  /* width: 100%; */
 }
 
 /*Body Ends*/

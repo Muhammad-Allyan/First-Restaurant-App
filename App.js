@@ -105,6 +105,11 @@ const HeaderCompoent = () => {
 //   },
 // };
 
+// Heading Compo inside resto card compo starts
+const HeadingRestoMain = () => (
+  <h1 className="main-resto-heading">Top restaurant chains</h1>
+);
+//   Heading Compo inside resto card compo ends
 const resList = [
   {
     // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
@@ -806,6 +811,7 @@ const BodyComponent = () => {
   return (
     <div className="body">
       <div className="search-bar">Search</div>
+      <HeadingRestoMain />
       <div className="restro-container">
         <RestroCardComponent resData={resList[0]} />
         <RestroCardComponent resData={resList[1]} />

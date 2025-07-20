@@ -59,3 +59,6 @@ It comes in a form of json.
 Config driven UI
 
 Cloudinary CDN
+
+Optimising the code =>
+optional chaining

@@ -785,6 +785,7 @@ const resList = [
 
 const RestroCardComponent = (props) => {
   const { resData } = props;
+  // const { name, avgRating, cuisines, costForTwo } = resData?.info;
   return (
     <div className="restro-card">
       <img
@@ -813,6 +814,9 @@ const BodyComponent = () => {
       <div className="search-bar">Search</div>
       <HeadingRestoMain />
       <div className="restro-container">
+        {/* {resList.map((restaurant) => (
+          <RestroCardComponent resData={restaurant} />
+        ))} */}
         <RestroCardComponent resData={resList[0]} />
         <RestroCardComponent resData={resList[1]} />
         <RestroCardComponent resData={resList[2]} />

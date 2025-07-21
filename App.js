@@ -707,7 +707,7 @@ const resList = [
 ];
 
 const RestroCardComponent = (props) => {
-  const { resData } = props;
+  const { resData : { info: { name, avgRating, cuisines, costForTwo } } } = props;
   // const { name, avgRating, cuisines, costForTwo } = resData?.info;
   return (
     <div className="restro-card">

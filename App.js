@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import ReactDOM from "react-dom/client";
 
 // Header Component Starts
@@ -9,7 +9,7 @@ const HeaderCompoent = () => {
       <div className="logo-container">
         <img
           className="logo"
-          src="https://i.pinimg.com/736x/08/3b/2f/083b2fe2646cd064e3a294bb716810f9.jpg"
+          src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=1380"
         />
         <div className="nav-container">
           <ul className="nav-items">
@@ -27,83 +27,6 @@ const HeaderCompoent = () => {
 // Header Component Ends
 
 // Restaurant Card Component Starts
-
-// const resObj = {
-//   type: "restaurant",
-//   info: {
-//     id: "1013620",
-//     name: "Big Bowl",
-//     cloudinaryImageId:
-//       "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/24/cf06adc4-a816-4170-b023-83a41f36db89_1013620.jpg",
-//     locality: "Koramangala",
-//     areaName: "80 Feet Road",
-//     costForTwo: "₹250 for two",
-//     cuisines: ["Chinese", "Tibetan", "Desserts"],
-//     avgRating: 4.5,
-//     parentId: "434792",
-//     avgRatingString: "4.5",
-//     totalRatingsString: "253",
-//     slaString: "20-25 mins",
-//     promoted: true,
-//     adTrackingId:
-//       "cid=31239797~p=0~adgrpid=31239797#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1013620~plpr=COLLECTION~eid=78b2acc8-d5b1-4430-a65f-609894219115~srvts=1753003930567~collid=83639",
-//     sla: {
-//       deliveryTime: 23,
-//       lastMileTravel: 0.7,
-//       serviceability: "SERVICEABLE",
-//       slaString: "20-25 mins",
-//       lastMileTravelString: "0.7 km",
-//       iconType: "ICON_TYPE_EMPTY",
-//     },
-//     availability: {
-//       nextCloseTime: "2025-07-20 23:00:00",
-//       opened: true,
-//     },
-//     badges: {},
-//     isOpen: true,
-//     type: "F",
-//     badgesV2: {
-//       entityBadges: {
-//         imageBased: {},
-//         textExtendedBadges: {},
-//         textBased: {},
-//       },
-//     },
-//     aggregatedDiscountInfoV3: {
-//       header: "ITEMS",
-//       subHeader: "AT ₹129",
-//       logoCtx: {
-//         text: "BENEFITS",
-//       },
-//     },
-//     orderabilityCommunication: {
-//       title: {},
-//       subTitle: {},
-//       message: {},
-//       customIcon: {},
-//       commsStyling: {},
-//     },
-//     differentiatedUi: {
-//       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-//       differentiatedUiMediaDetails: {
-//         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-//         lottie: {},
-//         video: {},
-//       },
-//     },
-//     reviewsSummary: {},
-//     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-//     isNewlyOnboarded: true,
-//     restaurantOfferPresentationInfo: {},
-//     externalRatings: {
-//       aggregatedRating: {
-//         rating: "--",
-//       },
-//     },
-//     ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-//     campaignId: "31239797",
-//   },
-// };
 
 // Heading Compo inside resto card compo starts
 const HeadingRestoMain = () => (

@@ -61,3 +61,5 @@ Cloudinary CDN
 
 Optimising the code =>
 optional chaining ?
+
+key unique id / re-rendering

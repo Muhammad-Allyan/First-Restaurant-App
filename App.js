@@ -35,7 +35,7 @@ const HeadingRestoMain = () => (
 //   Heading Compo inside resto card compo ends
 const resList = [
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "426776",
       name: "Theobroma",
@@ -136,7 +136,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "78511",
       name: "NIC Ice Creams",
@@ -231,7 +231,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "671928",
       name: "KFC",
@@ -306,7 +306,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "1013619",
       name: "Chinese Wok",
@@ -382,7 +382,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "5934",
       name: "Burger King",
@@ -460,7 +460,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "1013620",
       name: "Big Bowl",
@@ -536,7 +536,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "23678",
       name: "McDonald's",
@@ -627,7 +627,7 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    // @type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    type: "restaurant",
     info: {
       id: "10576",
       name: "Pizza Hut",
@@ -708,7 +708,19 @@ const resList = [
 
 const RestroCardComponent = (props) => {
   // Destructuring on the fly / Object Destructuring
-  const { resData : { info: { name, avgRating, cuisines, costForTwo, slaString, locality, cloudinaryImageId } } } = props;
+  const {
+    resData: {
+      info: {
+        name,
+        avgRating,
+        cuisines,
+        costForTwo,
+        slaString,
+        locality,
+        cloudinaryImageId,
+      },
+    },
+  } = props;
   // const { name, avgRating, cuisines, costForTwo, slaString, locality } = resData?.info;
   // const { name, avgRating, cuisines, costForTwo, slaString, locality } = props;
   return (
@@ -717,7 +729,7 @@ const RestroCardComponent = (props) => {
         className="restro-img"
         src={
           "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-       cloudinaryImageId
+          cloudinaryImageId
         }
       />
       <h3>{name}</h3>

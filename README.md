@@ -35,7 +35,6 @@ Passing a prop to the component is just like passing the argument to the functio
 
 When you have to dynamically pass some data to a component. you will pass in as a prop.
 
-
 Another way to pass the prop is destructuring on the fly.  React is wrapping this inside an object and passing this to the component/function as a prop.
 Another cool way of passing the props to the component.
 
@@ -53,8 +52,8 @@ const MyCompo = ({resName, cuisine, rating}) => {
 }
 
 How that restaurant data come from the backend to us?
-It comes in a form of json.
 
+It comes in a form of json.
 
 Config driven UI
 

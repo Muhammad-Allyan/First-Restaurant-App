@@ -66,6 +66,6 @@ key unique id / re-rendering
 
 Whenever we are using map or adding loop on list  of array make a habit to add key unique id over here.
 
-We can use index as the key also but never use index as the key it is the bad paractice read the react offical
+We can use index as the key also but never use index as the key it is anti-pattern and the bad paractice read the react offical
 
 doc list and keys.

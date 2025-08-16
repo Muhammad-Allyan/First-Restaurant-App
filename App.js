@@ -707,6 +707,7 @@ const resList = [
 ];
 
 const RestroCardComponent = (props) => {
+  // Destructuring on the fly / Object Destructuring
   const { resData : { info: { name, avgRating, cuisines, costForTwo, slaString, locality, cloudinaryImageId } } } = props;
   // const { name, avgRating, cuisines, costForTwo, slaString, locality } = resData?.info;
   // const { name, avgRating, cuisines, costForTwo, slaString, locality } = props;

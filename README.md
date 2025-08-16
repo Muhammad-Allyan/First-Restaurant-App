@@ -63,3 +63,5 @@ Optimising the code =>
 optional chaining ?
 
 key unique id / re-rendering
+
+Whenever we are using map or adding loop on list  of array make a habit to add key unique id over here.

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 // Header Component Starts
 
-const HeaderCompoent = () => {
+const HeaderComponent = () => {
   return (
     <div className="header">
       <div className="logo-container">
@@ -771,7 +771,7 @@ const BodyComponent = () => {
 const AppLayout = () => {
   return (
     <div className="app">
-      <HeaderCompoent />
+      <HeaderComponent />
       <BodyComponent />
     </div>
   );

@@ -85,6 +85,6 @@ export default CompoName;
 import CompoName From "./path"
 ```
 
-__2- Name Export & Import__
+__2- Named Export & Import__
 
-![Name Export](image-1.png)
+![Named Export](image-1.png)

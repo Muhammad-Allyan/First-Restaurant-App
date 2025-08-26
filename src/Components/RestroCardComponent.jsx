@@ -1,3 +1,5 @@
+import { CDN_URL } from "../utils/constants";
+
 const RestroCardComponent = (props) => {
   // Destructuring on the fly / Object Destructuring
   const {
@@ -19,9 +21,7 @@ const RestroCardComponent = (props) => {
     <div className="restro-card">
       <img
         className="restro-img"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
+        src={CDN_URL+cloudinaryImageId
         }
       />
       <h3>{name}</h3>

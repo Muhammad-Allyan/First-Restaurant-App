@@ -1,3 +1,4 @@
+import { LOGO_URL } from "../utils/constants";
 
 // Header Component Starts
 const HeaderComponent = () => {
@@ -6,7 +7,7 @@ const HeaderComponent = () => {
       <div className="logo-container">
         <img
           className="logo"
-          src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=1380"
+          src= {LOGO_URL}
         />
         <div className="nav-container">
           <ul className="nav-items">

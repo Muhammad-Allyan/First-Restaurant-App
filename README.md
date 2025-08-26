@@ -71,3 +71,8 @@ We can use index as the key also but never use index as the key it is anti-patte
 doc list and keys.
 
 ## Epispde 5 Let's get hooked
+`Import & Export in react`
+We have to export first whatever component we are using and import the component where we have to use it.
+
+export default CompoName;
+import CompoName From "./path"

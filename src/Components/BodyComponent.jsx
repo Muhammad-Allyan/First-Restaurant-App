@@ -10,7 +10,9 @@ const HeadingRestoMain = () => (
 const BodyComponent = () => { 
   return (
     <div className="body">
-      <div className="search-bar">Search</div>
+      <div className="filter">
+        <button className="filter-btn" onMouseOver={() => {console.log("Button Clicked")}}>Filter</button>
+      </div>
       <HeadingRestoMain />
       <div className="restro-container">
         {resList.map((restaurant) => (

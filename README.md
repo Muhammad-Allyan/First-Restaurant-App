@@ -71,6 +71,7 @@ We can use index as the key also but never use index as the key it is anti-patte
 doc list and keys.
 
 ## Epispde 5 Let's get hooked
+
 `Export & Import in react`
 
 We have to export first whatever component we are using and import the component where we have to use it.
@@ -88,3 +89,5 @@ import CompoName From "./path"
 __2- Named Export & Import__
 
 ![Named Export](image-1.png)
+
+### h

@@ -11,7 +11,7 @@ const resList = [
       areaName: "Koramangala",
       costForTwo: "₹400 for two",
       cuisines: ["Desserts", "Bakery", "Beverages"],
-      avgRating: 4.6,
+      avgRating: 3.6,
       parentId: "1040",
       avgRatingString: "4.6",
       totalRatingsString: "6.3K+",
@@ -358,7 +358,7 @@ const resList = [
       areaName: "Koramangala",
       costForTwo: "₹350 for two",
       cuisines: ["Burgers", "American"],
-      avgRating: 4.2,
+      avgRating: 3.2,
       parentId: "166",
       avgRatingString: "4.2",
       totalRatingsString: "102K+",
@@ -603,7 +603,7 @@ const resList = [
       areaName: "Koramangala",
       costForTwo: "₹350 for two",
       cuisines: ["Pizzas"],
-      avgRating: 4.3,
+      avgRating: 3.3,
       parentId: "721",
       avgRatingString: "4.3",
       totalRatingsString: "21K+",
@@ -673,3 +673,22 @@ const resList = [
 ];
 export default resList;
 // Res List Ends
+
+
+// Modify the cart
+// [  {
+//     info: {
+//       id: "10576",
+//       name: "Pizza Hut",
+//       cloudinaryImageId:
+//         "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/23396165-65be-4f2c-a2f8-d55de0497073_10576.JPG",
+//       locality: "6th Block",
+//       costForTwo: "₹350 for two",
+//       cuisines: ["Pizzas"],
+//       avgRating: 4.3,
+//       sla: {
+//         deliveryTime: 40,
+//         slaString: "35-40 mins",
+//       },
+//     }
+//   },]

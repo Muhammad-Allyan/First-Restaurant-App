@@ -1,6 +1,6 @@
 import RestroCardComponent from "./RestroCardComponent";
 import resList from "../utils/mockData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import resList from "../utils/mockData";
 
 // Heading Compo inside Body Compo starts
@@ -12,6 +12,12 @@ const HeadingRestoMain = () => (
 // Body Component Starts
 const BodyComponent = () => {
   let [listOfRestaurants, setListOfRestaurants] = useState(resList);
+
+  useEffect(() => {
+    console.log(`useEffect() called!`);
+  }, []);
+
+  console.log("Body Rendered!");
 
   return (
     <div className="body">

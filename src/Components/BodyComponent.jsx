@@ -11,7 +11,7 @@ const HeadingRestoMain = () => (
 
 // Body Component Starts
 const BodyComponent = () => {
-  let [listOfRestaurants, setListOfRestaurants] = useState(resList);
+  let [listOfRestaurants, setListOfRestaurants] = useState([]);
 
   useEffect(() => {
     // console.log(`useEffect() called!`);
@@ -23,6 +23,7 @@ const BodyComponent = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
+    // optional chaining here a good way to manage the data.
     setListOfRestaurants(json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
     console.log(json);
   };

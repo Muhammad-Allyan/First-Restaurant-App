@@ -24,13 +24,22 @@ const BodyComponent = () => {
     );
     const json = await data.json();
     // optional chaining here a good way to manage the data.
-    setListOfRestaurants(json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setListOfRestaurants(
+      json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
     console.log(json);
   };
 
+  // conditional rendering
+  // if (listOfRestaurants.length === 0) {
+  //   return <h1>Loading...</h1>;
+  // }
   console.log("Body Rendered!");
 
-  return (
+  return listOfRestaurants.length === 0 ? (
+    "Loading..."
+  ) : (
     <div className="body">
       <div className="filter">
         <button

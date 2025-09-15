@@ -1,7 +1,6 @@
 import RestroCardComponent from "./RestroCardComponent";
 import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
-import resList from "../utils/mockData";
 
 // Heading Compo inside Body Compo starts
 const HeadingRestoMain = () => (

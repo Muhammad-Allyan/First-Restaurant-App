@@ -1,7 +1,8 @@
-import React from "./node_modules/react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import HeaderComponent from "./src/Components/HeaderComponent";
-import BodyComponent from "./src/Components/BodyComponent";
+import HeaderComponent from "./Components/HeaderComponent";
+import BodyComponent from "./Components/BodyComponent";
+import resList from "./utils/mockData";
 
 const AppLayout = () => {
   return (

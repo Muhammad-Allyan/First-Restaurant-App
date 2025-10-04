@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.logo-container {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 18vh;
+  display: flex;
+  box-shadow: 0 4px 8px #00000017;
+}
+
+.logo {
+  max-width: 18vh;
+}
+
+.nav-container {
+  margin-right: 15vh;
+}
+
+.nav-items {
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > li {
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+.login-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.search-bar {
+  margin: 30px;
+}
+
+.main-resto-heading {
+  margin: 0 0 0 70px;
+}
+
+.restro-card {
+  background-color: #fff;
+  border-radius: 7px;
+  width: 300px;
+  height: 450px;
+  margin: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0000000a;
+}
+
+.restro-card:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px #00000017;
+}
+
+.restro-img {
+  box-sizing: border-box;
+  border-radius: 7px 7px 0 0;
+  width: 300px;
+  height: 230px;
+}
+
+.restro-card > h3, h4 {
+  margin: 10px 0 0 20px;
+  font-size: 20px;
+}
+
+.restro-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+/*# sourceMappingURL=public.7cbc34e4.css.map */

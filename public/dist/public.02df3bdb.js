@@ -16132,9 +16132,13 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _constants = require("../utils/constants");
+var _s = $RefreshSig$();
 // Header Component Starts
 const HeaderComponent = ()=>{
+    _s();
+    const [btnName, setbtnName] = (0, _react.useState)("Login");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16145,7 +16149,7 @@ const HeaderComponent = ()=>{
                     src: (0, _constants.LOGO_URL)
                 }, void 0, false, {
                     fileName: "src/Components/HeaderComponent.jsx",
-                    lineNumber: 8,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16183,8 +16187,11 @@ const HeaderComponent = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "login-btn",
-                                onClick: ()=>{},
-                                children: "Login"
+                                onClick: ()=>{
+                                    btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");
+                                    console.log(btnName);
+                                },
+                                children: btnName
                             }, void 0, false, {
                                 fileName: "src/Components/HeaderComponent.jsx",
                                 lineNumber: 18,
@@ -16204,15 +16211,16 @@ const HeaderComponent = ()=>{
             ]
         }, void 0, true, {
             fileName: "src/Components/HeaderComponent.jsx",
-            lineNumber: 7,
+            lineNumber: 10,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/Components/HeaderComponent.jsx",
-        lineNumber: 6,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
+_s(HeaderComponent, "ha+zlslDE5c2g/IzFb/WkMFImx0=");
 _c = HeaderComponent;
 exports.default = HeaderComponent; // Header Component Ends
 var _c;
@@ -16223,7 +16231,7 @@ $RefreshReg$(_c, "HeaderComponent");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dIVBf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"dIVBf":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);

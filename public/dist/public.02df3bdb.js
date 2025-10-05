@@ -18579,6 +18579,7 @@ _c = HeadingRestoMain;
 const BodyComponent = ()=>{
     _s();
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
+    const [filteredRestaurants, setfilteredRestaurants] = (0, _react.useState)([]);
     const [searchTextInput, setsearchTextInput] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         // console.log(`useEffect() called!`);
@@ -18589,6 +18590,7 @@ const BodyComponent = ()=>{
         const json = await data.json();
         // optional chaining here a good way to manage the data.
         setListOfRestaurants(json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setfilteredRestaurants(json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
         console.log(json);
     };
     // conditional rendering
@@ -18611,7 +18613,7 @@ const BodyComponent = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/BodyComponent.jsx",
-                        lineNumber: 47,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -18622,11 +18624,13 @@ const BodyComponent = ()=>{
                             console.log({
                                 searchTextInput
                             });
+                            const SearchFilteredRestaurants = listOfRestaurants.filter((res)=>res.info.name.toLowerCase().includes(searchTextInput.toLocaleLowerCase()));
+                            setfilteredRestaurants(SearchFilteredRestaurants);
                         },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/Components/BodyComponent.jsx",
-                        lineNumber: 52,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -18639,42 +18643,42 @@ const BodyComponent = ()=>{
                         children: "Top Rated Restaurants"
                     }, void 0, false, {
                         fileName: "src/Components/BodyComponent.jsx",
-                        lineNumber: 63,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/BodyComponent.jsx",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingRestoMain, {}, void 0, false, {
                 fileName: "src/Components/BodyComponent.jsx",
-                lineNumber: 76,
+                lineNumber: 86,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restro-container",
-                children: listOfRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardComponentDefault.default), {
+                children: filteredRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardComponentDefault.default), {
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/Components/BodyComponent.jsx",
-                        lineNumber: 79,
+                        lineNumber: 89,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/BodyComponent.jsx",
-                lineNumber: 77,
+                lineNumber: 87,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/BodyComponent.jsx",
-        lineNumber: 45,
+        lineNumber: 50,
         columnNumber: 5
     }, undefined);
 };
-_s(BodyComponent, "OaDaMyT/85trVZAMXs+7/VsP9dg=");
+_s(BodyComponent, "6a0w9fHilxzhN1PBP6aHTvI2Tf8=");
 _c1 = BodyComponent;
 exports.default = BodyComponent; // Body Component Ends
 var _c, _c1;

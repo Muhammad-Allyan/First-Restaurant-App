@@ -11,6 +11,7 @@ const HeadingRestoMain = () => (
 // Body Component Starts
 const BodyComponent = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [filteredRestaurants, setfilteredRestaurants] = useState([]);
   const [searchTextInput, setsearchTextInput] = useState("");
 
   useEffect(() => {
@@ -25,6 +26,10 @@ const BodyComponent = () => {
     const json = await data.json();
     // optional chaining here a good way to manage the data.
     setListOfRestaurants(
+      json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+    setfilteredRestaurants(
       json?.data?.cards?.[4].card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
@@ -47,7 +52,9 @@ const BodyComponent = () => {
         <input
           className="inputbox"
           value={searchTextInput}
-          onChange={(e) => {setsearchTextInput(e.target.value)}}
+          onChange={(e) => {
+            setsearchTextInput(e.target.value);
+          }}
         />
         <button
           className="search-btn"
@@ -55,7 +62,10 @@ const BodyComponent = () => {
             // Filter the restaurants and update the UI
             // Search text here
             console.log({ searchTextInput });
-      
+            const SearchFilteredRestaurants = listOfRestaurants.filter((res) =>
+              res.info.name.toLowerCase().includes(searchTextInput.toLocaleLowerCase())
+            );
+            setfilteredRestaurants(SearchFilteredRestaurants);
           }}
         >
           Search
@@ -75,7 +85,7 @@ const BodyComponent = () => {
       </div>
       <HeadingRestoMain />
       <div className="restro-container">
-        {listOfRestaurants.map((restaurant) => (
+        {filteredRestaurants.map((restaurant) => (
           <RestroCardComponent key={restaurant.info.id} resData={restaurant} />
         ))}
         {/* <RestroCardComponent resData={resList[0]} />

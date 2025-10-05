@@ -14,10 +14,11 @@
 }
 .logo {
   max-width: 18vh;
+  margin-left: 45px;
 }
 
 .nav-container {
-  margin-right: 15vh;
+  margin-right: 70px;
 }
 
 .nav-items {
@@ -32,7 +33,7 @@
 }
 
 /* Login Button Starts */
-.login-btn{
+.login-btn {
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -49,8 +50,8 @@
 /* Search Bar Ends*/
 
 /*Resto Main Heading Component Starts*/
-.main-resto-heading{
-  margin: 0px 0px 0px 70px ;
+.main-resto-heading {
+  margin: 0px 0px 0px 70px;
 }
 /*Resto Main Heading Component Starts*/
 /*Restaurant Card Starts*/
@@ -76,9 +77,10 @@
   border-radius: 7px 7px 0px 0px;
 }
 
-.restro-card > h3,h4{
-    font-size: 20px;
-    margin: 10px 0px 0px 20px;
+.restro-card > h3,
+h4 {
+  font-size: 20px;
+  margin: 10px 0px 0px 20px;
 }
 
 .restro-container {
@@ -87,6 +89,30 @@
   justify-content: center;
   overflow: hidden;
   /* width: 100%; */
+}
+
+/* Filter Button, Input Field, Search Button CSS */
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 70px;
+  padding: 30px 0px 0px 0px;
+}
+.inputbox {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.search-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.filter-btn {
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
 /*Body Ends*/

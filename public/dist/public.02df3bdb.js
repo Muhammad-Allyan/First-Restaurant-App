@@ -16231,7 +16231,7 @@ $RefreshReg$(_c, "HeaderComponent");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"dIVBf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dIVBf":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
@@ -18578,7 +18578,8 @@ _c = HeadingRestoMain;
 // Body Component Starts
 const BodyComponent = ()=>{
     _s();
-    let [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
+    const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
+    const [searchTextInput, setsearchTextInput] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         // console.log(`useEffect() called!`);
         fetchData();
@@ -18594,33 +18595,62 @@ const BodyComponent = ()=>{
     // if (listOfRestaurants.length === 0) {
     //   return <h1>Loading...</h1>;
     // }
+    // If the state variables update, react triggers the reconciliation cycle(re-renders the components)
     console.log("Body Rendered!");
     return listOfRestaurants.length === 0 ? "Loading..." : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "filter-btn",
-                    onClick: ()=>{
-                        const filteredList = listOfRestaurants.filter((res)=>res.info.avgRating > 4.2);
-                        setListOfRestaurants(filteredList);
-                        console.log(listOfRestaurants);
-                    },
-                    children: "Filter"
-                }, void 0, false, {
-                    fileName: "src/Components/BodyComponent.jsx",
-                    lineNumber: 44,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "inputbox",
+                        value: searchTextInput,
+                        onChange: (e)=>{
+                            setsearchTextInput(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/Components/BodyComponent.jsx",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        onClick: ()=>{
+                            // Filter the restaurants and update the UI
+                            // Search text here
+                            console.log({
+                                searchTextInput
+                            });
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/Components/BodyComponent.jsx",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "filter-btn",
+                        onClick: ()=>{
+                            const filteredList = listOfRestaurants.filter((res)=>res.info.avgRating > 4.2);
+                            setListOfRestaurants(filteredList);
+                            console.log(listOfRestaurants);
+                        },
+                        children: "Top Rated Restaurants"
+                    }, void 0, false, {
+                        fileName: "src/Components/BodyComponent.jsx",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/Components/BodyComponent.jsx",
-                lineNumber: 43,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingRestoMain, {}, void 0, false, {
                 fileName: "src/Components/BodyComponent.jsx",
-                lineNumber: 57,
+                lineNumber: 76,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18629,22 +18659,22 @@ const BodyComponent = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/Components/BodyComponent.jsx",
-                        lineNumber: 60,
+                        lineNumber: 79,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/BodyComponent.jsx",
-                lineNumber: 58,
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/BodyComponent.jsx",
-        lineNumber: 42,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
-_s(BodyComponent, "UiDdifLDylk9/nIIRtpBnM10fwg=");
+_s(BodyComponent, "OaDaMyT/85trVZAMXs+7/VsP9dg=");
 _c1 = BodyComponent;
 exports.default = BodyComponent; // Body Component Ends
 var _c, _c1;

@@ -10,7 +10,8 @@ const HeadingRestoMain = () => (
 
 // Body Component Starts
 const BodyComponent = () => {
-  let [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [searchTextInput, setsearchTextInput] = useState("");
 
   useEffect(() => {
     // console.log(`useEffect() called!`);
@@ -34,6 +35,8 @@ const BodyComponent = () => {
   // if (listOfRestaurants.length === 0) {
   //   return <h1>Loading...</h1>;
   // }
+
+  // If the state variables update, react triggers the reconciliation cycle(re-renders the components)
   console.log("Body Rendered!");
 
   return listOfRestaurants.length === 0 ? (
@@ -41,6 +44,22 @@ const BodyComponent = () => {
   ) : (
     <div className="body">
       <div className="filter">
+        <input
+          className="inputbox"
+          value={searchTextInput}
+          onChange={(e) => {setsearchTextInput(e.target.value)}}
+        />
+        <button
+          className="search-btn"
+          onClick={() => {
+            // Filter the restaurants and update the UI
+            // Search text here
+            console.log({ searchTextInput });
+      
+          }}
+        >
+          Search
+        </button>
         <button
           className="filter-btn"
           onClick={() => {
@@ -51,7 +70,7 @@ const BodyComponent = () => {
             console.log(listOfRestaurants);
           }}
         >
-          Filter
+          Top Rated Restaurants
         </button>
       </div>
       <HeadingRestoMain />

@@ -14,10 +14,11 @@
 
 .logo {
   max-width: 18vh;
+  margin-left: 45px;
 }
 
 .nav-container {
-  margin-right: 15vh;
+  margin-right: 70px;
 }
 
 .nav-items {
@@ -77,5 +78,29 @@
   justify-content: center;
   display: flex;
   overflow: hidden;
+}
+
+.filter {
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 70px;
+  padding: 30px 0 0;
+  display: flex;
+}
+
+.inputbox {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.search-btn {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.filter-btn {
+  cursor: pointer;
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=public.7cbc34e4.css.map */
